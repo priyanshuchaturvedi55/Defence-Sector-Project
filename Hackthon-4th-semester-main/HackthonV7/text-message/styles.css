@@ -1,0 +1,183 @@
+/* Reset styles for all relevant elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+/* Style for the body element */
+body {
+    font-family: Arial, sans-serif; /* Set font family */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/image.jpg'); /* Set background image and gradient */
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    min-height: 100vh; /* Minimum height of the viewport */
+    position: relative; /* Position the element relative to its normal position */
+}
+
+/* Style for the header element */
+header {
+    color: #fff; /* Set text color to white */
+    padding: 20px 0; /* Add padding to the top and bottom */
+    position: relative; /* Position the element relative to its normal position */
+    display: flex; /* Display the element as a flex container */
+    justify-content: center; /* Center the flex items along the main axis */
+    align-items: center; /* Center the flex items along the cross axis */
+}
+
+/* Style for the h1 element within the header */
+header h1 {
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 50px; /* Set font size */
+    text-align: center; /* Center the text */
+}
+
+/* Styling for labels */
+label {
+    color: #fff; /* Set text color */
+    font-size: 25px; /* Set font size */
+    font-weight: 10px; /* Set font weight */
+}
+
+/* Styling for call button */
+.call-button {
+    color: #fff; /* Set text color */
+    font-size: 25px; /* Set font size */
+    font-weight: 10px; /* Set font weight */
+}
+
+/* Styling for input fields */
+input {
+    margin-top: 10px; /* Add margin to the top */
+}
+
+/* Styling for headings within containers */
+.container h2 {
+    color: #fff; /* Set text color */
+    font-size: 20px; /* Set font size */
+    margin-bottom: 2px; /* Add margin to the bottom */
+}
+
+/* Styling for the main container */
+.container {
+    max-width: 500px; /* Set maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Styling for forms */
+form {
+    margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+/* Styling for input fields */
+input[type="text"], .call-button {
+    width: 100%; /* Set width to 100% */
+    padding: 10px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    border: 1px solid #ccc; /* Set border */
+    border-radius: 5px; /* Add border radius */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+/* Styling for submit buttons */
+form button[type="submit"], .call-button {
+    margin: 5px auto; /* Add margin */
+    margin-top: 5px; /* Add margin to the top */
+    display: block; /* Display as block element */
+    width: 50%; /* Set width to 50% */
+    padding: 10px; /* Add padding */
+    background-color: #e43333; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    font-size: 16px; /* Set font size */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Hover effect for submit buttons */
+form button[type="submit"]:hover, .call-button:hover {
+    background-color: #c12e2e; /* Change background color on hover */
+}
+
+/* Styling for the pre-defined numbers list */
+ul {
+    list-style-type: none; /* Remove list style */
+    padding: 0; /* Remove padding */
+}
+
+/* Styling for the pre-defined number buttons */
+ul li button {
+    margin: 5px auto; /* Add margin */
+    display: block; /* Display as block element */
+    width: 80%; /* Set width to 80% */
+    padding: 10px; /* Add padding */
+    background-color: #004080; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    margin-bottom: 10px; /* Add margin to the bottom */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Hover effect for the pre-defined number buttons */
+ul li button:hover {
+    background-color: #002366; /* Change background color on hover */
+}
+
+/* Animation for droneview and text-message buttons */
+.droneview, .text-message {
+    animation: slideme 1s ease-in; /* Apply animation */
+}
+
+/* Animation for call and safest-root buttons */
+.call, .safest-root {
+    animation: slideme1 1s ease-in; /* Apply animation */
+}
+
+/* Scroll animation */
+.scroll-container {
+    overflow: hidden; /* Hide overflow */
+}
+
+.scroll-text {
+    color: #fff; /* Set text color */
+    animation: scroll 30s linear infinite; /* Apply animation */
+    margin-top: 50px; /* Add margin to the top */
+    width: 100%; /* Set width to 100% */
+    font-size: 30px; /* Set font size */
+    font-weight: bold; /* Set font weight to bold */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #004080; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 5px 0; /* Add padding */
+    text-align: center; /* Center align text */
+    position: absolute; /* Position the element absolutely */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Set width to 100% */
+    height: 80px; /* Set height */
+}
+
+/* Image container styling */
+.footer .defence-photos {
+    display: flex; /* Flexbox layout for images */
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Space between images */
+    margin-bottom: 10px; /* Margin below the images */
+}
+
+/* Image styling */
+.footer .defence-photos img {
+    height: 50px; /* Height of each image */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Paragraph styling */
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Set font size */
+}

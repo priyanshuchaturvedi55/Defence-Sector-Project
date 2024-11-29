@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droneview</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Droneview</h1> <!-- Main heading -->
+        </div>
+    </header>
+    <!-- Main content -->
+    <main>
+        <div id="map-container" class="container">
+            <!-- Camera feed -->
+            <div class="video-feed">
+                <iframe src="http://127.0.0.1:5000/video_feed" width="100%" height="100%"></iframe>
+            </div>
+
+            <!-- Map and plot -->
+            <div class="map-plot-container">
+                <!-- Embed the generated map -->
+                <iframe src="map1.html" class="map" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!-- Embed the generated plot -->
+                <iframe src="plot.html" class="plot" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script> <!-- Link to external JavaScript file (If Any) -->
+</body>
+</html>

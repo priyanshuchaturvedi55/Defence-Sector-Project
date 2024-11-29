@@ -1,0 +1,71 @@
+/* Reset styles for all relevant elements to avoid browser defaults */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style for the body element */
+body {
+    font-family: Arial, sans-serif; /* Set font family to Arial and fallback to sans-serif */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/image.jpg');  /* Set background image and gradient */
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    min-height: 100vh; /* Minimum height of the viewport */
+    position: relative; /* Position the element relative to its normal position */
+}
+
+/* Style for the header element */
+header {
+    color: #fff; /* Set text color to white */
+    padding: 20px 0; /* Add padding to the top and bottom */
+    position: relative; /* Position the element relative to its normal position */
+    display: flex; /* Display the element as a flex container */
+    justify-content: center; /* Center the flex items along the main axis */
+    align-items: center; /* Center the flex items along the cross axis */
+}
+
+/* Style for the h1 element within the header */
+header h1 {
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 50px; /* Set font size */
+    text-align: center; /* Center the text */
+}
+
+/* Container styles */
+.container {
+    width: 90%; /* Set the width of the container */
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding for content */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+/* Map container styles */
+#map-container {
+    display: flex; /* Display as flex container */
+    height: 80vh; /* Set the height to 80% of the viewport height */
+}
+
+/* Video feed styles */
+.video-feed {
+    flex: 1; /* Take up half the width */
+    margin-right: 10px; /* Add some space between the video feed and the map/plot container */
+    border-radius: 10px; /* Add border radius */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Map and plot container styles */
+.map-plot-container {
+    flex: 1; /* Take up the remaining half width */
+    display: flex; /* Display as flex container */
+    flex-direction: column; /* Arrange children in a column */
+    gap: 10px; /* Add space between the map and plot */
+}
+
+/* Style the embedded iframes */
+.map-plot-container iframe {
+    flex: 1; /* Each iframe takes up equal space */
+    border: none; /* Remove the border */
+    border-radius: 10px; /* Add border radius */
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Message</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <h1>Text Message</h1> <!-- Page title -->
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <div class="container">
+            <!-- SOS form -->
+            <form id="sosForm">
+                <label for="phoneNumber">Enter Phone Number:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Send SOS" required>
+                <button type="submit">Send SOS</button>
+            </form>
+            <!-- Quick SOS numbers -->
+            <h2>Quick SOS Numbers:</h2>
+            <ul>
+                <li><button id="contact1" data-phone="+919015352525" onclick="sendEmergencyContactSOS('+919015352525')">Emergency Contact 1</button></li>
+                <li><button id="contact2" data-phone="+919868671261" onclick="sendEmergencyContactSOS('+919868671261')">Emergency Contact 2</button></li>
+                <li><button id="contact3" data-phone="+916264580842" onclick="sendEmergencyContactSOS('+916264580842')">Emergency Contact 3</button></li>
+                <!-- Add more pre-defined numbers as needed -->
+            </ul>
+            <button class="call-button" onclick="sendSOSToAll()">Send SOS to All Contacts</button> <!-- Button to send SOS to all contacts -->
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="defence-photos">
+                <img src="images/air_force_logo.png" alt="">
+                <img src="images/navy_logo.png" alt="">
+                <img src="images/army_logo.png" alt="">
+            </div>
+            <p>&copy; 2024 Defense Sector Project. All Rights Reserved.</p> <!-- Copyright notice -->
+        </div>
+    </footer>
+    <script src="text-message.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

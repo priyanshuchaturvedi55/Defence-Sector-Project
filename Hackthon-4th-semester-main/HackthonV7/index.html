@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets the character set to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Sets the viewport to the device's width and initial scale of 1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the title of the webpage -->
+    <title>Defense Sector Project</title>
+    <!-- Links to an external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <!-- Website title -->
+            <h1>Defense Sector Project</h1>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section>
+            <!-- Welcome message -->
+            <h2>Welcome to the Defense Sector Project Website</h2>
+            <div class="button-container">
+                <!-- Navigation buttons -->
+                <button class="link-button droneview" onclick="window.location.href='./droneview/droneview.html'">DRONEVIEW</button>
+                <a class="link-button call" href="http://localhost:3000/call/call.html">CALL</a>
+                <a class="link-button text-message" href="http://localhost:3000/text-message/text-message.html">TEXT MESSAGE</a>
+                <button class="link-button safest-root" onclick="window.location.href='./safest-root/safest-root.html'">SAFEST ROUTE</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll text -->
+    <div class="scroll-container">
+        <!-- Description of the website -->
+        <p class="scroll-text">This is a project website related to the defense sector, showcasing various services and information.</p>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="defence-photos">
+                <!-- Defense sector logos -->
+                <img src="images/air_force_logo.png" alt="Air Force Logo">
+                <img src="images/navy_logo.png" alt="Navy Logo">
+                <img src="images/army_logo.png" alt="Army Logo">
+            </div>
+            <!-- Copyright notice -->
+            <p>&copy; 2024 Defense Sector Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Links to an external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

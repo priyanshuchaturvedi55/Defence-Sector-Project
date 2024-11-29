@@ -1,0 +1,184 @@
+/* Reset styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Set font family */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/image.jpg'); /* Set background image and gradient */
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    min-height: 100vh; /* Minimum height of the viewport */
+    position: relative; /* Position the element relative to its normal position */
+}
+
+/* Header styles */
+header {
+    color: #fff; /* Set text color to white */
+    padding: 20px 0; /* Add padding to the top and bottom */
+    position: relative; /* Position the element relative to its normal position */
+    display: flex; /* Display the element as a flex container */
+    justify-content: center; /* Center the flex items along the main axis */
+    align-items: center; /* Center the flex items along the cross axis */
+}
+
+/* Header title styles */
+header h1 {
+    margin-top: 10px; /* Add margin to the top */
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 50px; /* Set font size */
+    text-align: center; /* Center the text */
+}
+
+/* Main heading styles */
+h2 {
+    text-transform: uppercase; /* Transform text to uppercase */
+    text-align: center; /* Center align the text */
+    color: #fff; /* Set text color */
+    font-size: 28px; /* Set font size */
+    width: 90%; /* Set width to 90% of the parent container */
+    max-width: 800px; /* Set maximum width */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    margin: 0 auto; /* Center the element horizontally */
+}
+
+/* Button container styles */
+.button-container {
+    display: grid; /* Display as grid */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+    gap: 20px; /* Set gap between grid items */
+    margin: 30px 250px; /* Set margin */
+    margin-top: 40px; /* Add margin to the top */
+}
+
+/* Link button styles */
+.link-button {
+    display: flex; /* Display as flex */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    text-decoration: none; /* Remove underline */
+    background-color: rgba(229, 232, 235, 0.8); /* Set background color */
+    color: #e43333; /* Set text color */
+    padding: 30px 60px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 40px; /* Add border radius */
+    font-size: 35px; /* Set font size */
+    font-weight: bold; /* Set font weight to bold */
+    cursor: pointer; /* Set cursor to pointer */
+    margin: 15px; /* Add margin */
+    transition: 0.8s; /* Add transition effect */
+}
+
+/* Link button hover effect */
+.link-button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+}
+
+/* Specific hover effects for different buttons */
+.droneview:hover {
+    box-shadow: 0 8px 16px greenyellow; /* Add box shadow on hover */
+}
+
+.call:hover {
+    box-shadow: 0 8px 16px red; /* Add box shadow on hover */
+}
+
+.text-message:hover {
+    box-shadow: 0 8px 16px aqua; /* Add box shadow on hover */
+}
+
+.safest-root:hover {
+    box-shadow: 0 8px 16px orange; /* Add box shadow on hover */
+}
+
+/* Animation for droneview and text-message buttons */
+.droneview, .text-message {
+    animation: slideme 1s ease-in; /* Apply animation */
+}
+
+@keyframes slideme {
+    0% {
+        transform: skewX(53deg) translateX(-100%); /* Initial transformation */
+    }
+    100% {
+        transform: skew(0deg); /* Final transformation */
+    }
+}
+
+/* Animation for call and safest-root buttons */
+.call, .safest-root {
+    animation: slideme1 1s ease-in; /* Apply animation */
+}
+
+@keyframes slideme1 {
+    0% {
+        transform: skewX(-53deg) translateX(100%); /* Initial transformation */
+    }
+    100% {
+        transform: skew(0deg); /* Final transformation */
+    }
+}
+
+/* Scroll animation */
+.scroll-container {
+    overflow: hidden; /* Hide overflow */
+}
+
+.scroll-text {
+    color: #fff; /* Set text color */
+    animation: scroll 30s linear infinite; /* Apply animation */
+    margin-top: 50px; /* Add margin to the top */
+    width: 100%; /* Set width to 100% */
+    font-size: 30px; /* Set font size */
+    font-weight: bold; /* Set font weight to bold */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Initial transformation */
+    }
+    100% {
+        transform: translateX(-100%); /* Final transformation */
+    }
+}
+
+/* Footer styles */
+.footer {
+    background-color: #004080; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px 0; /* Add padding */
+    text-align: center; /* Center align text */
+    position: absolute; /* Position the element absolutely */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Set width to 100% */
+    height: 80px; /* Set height */
+}
+
+.container {
+    font-size: 24px; /* Set font size */
+}
+
+/* Styling for the image container */
+.footer .defence-photos {
+    display: flex; /* Flexbox layout for images */
+    justify-content: center; /* Center images horizontally */
+    gap: 35px; /* Space between images */
+    margin-bottom: 10px; /* Margin below the images */
+}
+
+/* Styling for the images */
+.footer .defence-photos img {
+    height: 50px; /* Height of each image */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for the paragraph */
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 15px; /* Font size */
+    margin-bottom: 2px; /* Add margin to the bottom */
+}
